@@ -164,13 +164,13 @@ int main() {
   linked_list<int> lst;
   for (int i = 0; i < n; i++) {
     int el;
-    cin >> el;
+    scanf("%d", &el);
     lst.append(el);
   }
   vector<linked_list<int>::node*> ds;
   for (int i = 0; i < n; i++) {
     int el;
-    cin >> el;
+    scanf("%d", &el);
     if (el == 1) {
       ds.push_back(new linked_list<int>::node{0, nullptr, true});
     } else {
@@ -179,7 +179,7 @@ int main() {
   }
   for (auto& i : ds) {
     if (!i->extra_field_for_first_elem) {
-      cout << i->data << ' ' << (i->next->next == nullptr ? -1 : i->next->next->data) << endl;
+      printf("%d%c%d%c", i->data, ' ', (i->next->next == nullptr ? -1 : i->next->next->data), '\n');
       for (auto& j : ds) {
         if (j == nullptr) continue;
         if (j == i->next) {
@@ -188,7 +188,7 @@ int main() {
       }
       lst.remove_after_node(i);
     } else {
-      cout << -1 << ' ' << (lst.get_head()->next->next == nullptr ? -1 : lst.get_head()->next->next->data) << endl;
+      printf("%d%c%d%c", -1, ' ', (lst.get_head()->next->next == nullptr ? -1 : lst.get_head()->next->next->data), '\n');
       for (auto& j : ds) {
         if (j == nullptr) continue;
         if (j == lst.get_head()->next) {
