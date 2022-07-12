@@ -5,6 +5,8 @@ using std::cout;
 using std::queue;
 using std::endl;
 
+
+
 int main() {
     queue<int> monkeys;
     int n, k;

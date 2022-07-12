@@ -24,46 +24,48 @@
 #define WITH_VALUE = 
 #define INCREASE ++
 #define IS_LESS_THAN <
-#define 才怪 !
+#define NOP !
+#define PLEASE ;
+#define IMPORT using
 
-static constexpr const char * JA_STR = "YES😀";
-static constexpr const char * NEIN_STR = "NO😅";
+static constexpr const char * JA_STR = "YES😀" PLEASE
+static constexpr const char * NEIN_STR = "NO😅" PLEASE
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::stack;
+IMPORT std::cin PLEASE
+IMPORT std::cout PLEASE
+IMPORT std::endl PLEASE
+IMPORT std::stack PLEASE
 
-std::vector<int> underlying_data;
+std::vector<int> underlying_data PLEASE
 
 // Implement a container to get the underlying data of an STL stack.
 DEFINE_A_CLASS spy_container BEGIN
   PUBLIC_AREA
-  HEY_YOU value_type ACTUALLY_YOU_ARE int;
-  HEY_YOU reference ACTUALLY_YOU_ARE int&;
-  HEY_YOU const_reference ACTUALLY_YOU_ARE const int &;
-  HEY_YOU size_type ACTUALLY_YOU_ARE std::vector<int>::size_type;
+  HEY_YOU value_type ACTUALLY_YOU_ARE int PLEASE
+  HEY_YOU reference ACTUALLY_YOU_ARE int& PLEASE
+  HEY_YOU const_reference ACTUALLY_YOU_ARE const int & PLEASE
+  HEY_YOU size_type ACTUALLY_YOU_ARE std::vector<int>::size_type PLEASE
   int back() BEGIN
-    RET_WITH underlying_data.back();
+    RET_WITH underlying_data.back() PLEASE
   END
   void push_back(int info) BEGIN
-    underlying_data.push_back(info);
+    underlying_data.push_back(info) PLEASE
   END
   void pop_back() BEGIN
-    underlying_data.pop_back();
+    underlying_data.pop_back() PLEASE
   END
-END;
+END PLEASE
 
 FUCKING_PROGRAM_MAIN BEGIN
-  stack<int, spy_container> hacked_stack_instance;
-  int n;
-  cin >> n;
-  for (int i WITH_VALUE 0; i IS_LESS_THAN n; i INCREASE) BEGIN
-    int t;
-    cin >> t;
-    hacked_stack_instance.push(t);
+  stack<int, spy_container> hacked_stack_instance PLEASE
+  int n PLEASE
+  cin >> n PLEASE
+  for (int i WITH_VALUE 0 PLEASE i IS_LESS_THAN n PLEASE i INCREASE) BEGIN
+    int t PLEASE
+    cin >> t PLEASE
+    hacked_stack_instance.push(t) PLEASE
   END
-  while (才怪 hacked_stack_instance.empty()) BEGIN
-    hacked_stack_instance.pop();
+  while (NOP hacked_stack_instance.empty()) BEGIN
+    hacked_stack_instance.pop() PLEASE
   END
 END
