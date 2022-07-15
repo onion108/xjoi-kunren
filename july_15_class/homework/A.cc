@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cstring>
 
 #pragma endregion
 
@@ -14,6 +15,7 @@ using std::cin;
 using std::cout;
 using std::cerr;
 using std::endl;
+using std::strlen;
 
 #define get_line() __LINE__
 #define __DEBUG__
@@ -27,7 +29,7 @@ using std::endl;
 #endif
 
 static constexpr const int MAXN = 1e6;
-static constexpr const int BASE = 10;
+static constexpr const int BASE = 2;
 char s[MAXN];
 int i[MAXN];
 int a1[MAXN];
@@ -118,8 +120,8 @@ int big_div(int a[], int b, int c[]) {
 int main() {
     scanf("%s", s);
     f(a1, s);
-    scanf("%s", s);
-    f(a2, s);
+    f(a2, "10001");
     big_mul(a1, a2, a3);
     print(a3);
 }
+

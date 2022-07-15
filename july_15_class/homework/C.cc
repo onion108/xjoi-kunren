@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cstring>
 
 #pragma endregion
 
@@ -14,6 +15,7 @@ using std::cin;
 using std::cout;
 using std::cerr;
 using std::endl;
+using std::strlen;
 
 #define get_line() __LINE__
 #define __DEBUG__
@@ -116,10 +118,12 @@ int big_div(int a[], int b, int c[]) {
 }
 
 int main() {
-    scanf("%s", s);
+    scanf("%*d%s", s);
     f(a1, s);
-    scanf("%s", s);
-    f(a2, s);
-    big_mul(a1, a2, a3);
+    int a4;
+    scanf("%d", &a4);
+    int r = big_div(a1, a4, a3);
     print(a3);
+    printf("%d\n", r);
 }
+

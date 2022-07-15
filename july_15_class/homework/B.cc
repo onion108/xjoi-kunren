@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cstring>
 
 #pragma endregion
 
@@ -14,6 +15,7 @@ using std::cin;
 using std::cout;
 using std::cerr;
 using std::endl;
+using std::strlen;
 
 #define get_line() __LINE__
 #define __DEBUG__
@@ -120,6 +122,6 @@ int main() {
     f(a1, s);
     scanf("%s", s);
     f(a2, s);
-    big_mul(a1, a2, a3);
+    big_sub(a1, a2, a3);
     print(a3);
 }
