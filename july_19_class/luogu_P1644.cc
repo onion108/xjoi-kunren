@@ -1,0 +1,2 @@
+#include <iostream>
+using namespace std;int dp[200][200];int main() {int n, m;cin >> n >> m;dp[0][0] = 1;for (int i = 1; i <= m; i++) {for (int j = 0; j <= n; j++) {auto d1 = (i - 1 >= 0 && j - 2 >= 0) ? dp[i-1][j-2]:0;auto d2 = (i - 2 >= 0 && j - 1 >= 0) ? dp[i-2][j-1]:0;auto d3 = (i - 1 >= 0 && j + 2 <= m) ? dp[i-1][j+2]:0;auto d4 = (i - 2 >= 0 && j + 1 <= m) ? dp[i-2][j+1]:0;dp[i][j] = d1 + d2 + d3 + d4;}}cout << dp[m][n];}

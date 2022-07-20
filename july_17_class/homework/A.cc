@@ -37,17 +37,15 @@ fn main() -> i32 {
         courses[i] = fucking_course;
     }
     std::sort(courses + 1, courses + 1 + n, [](course_t x, course_t y) {
-        if (x.start_time != y.start_time) return x.start_time < y.start_time;
-        else return x.end_time < y.end_time;
+        return x.end_time < y.end_time;
     });
     i32 course_counter = 0;
     course_t last_selected_course = course_t {-1, -1};
     for (int i = 1; i <= n; i++) {
-        if (courses[i].start_time < last_selected_course.end_time) {
-            continue;
+        if (courses[i].start_time >= last_selected_course.end_time) {
+            last_selected_course = courses[i];
+            course_counter++;
         }
-        last_selected_course = courses[i];
-        course_counter++;
     }
     printf("%d\n", course_counter);
     return 0;

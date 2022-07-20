@@ -1,1 +1,3 @@
-help.
+begin
+    writeln('fuck yoU!')
+end;

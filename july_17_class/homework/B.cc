@@ -18,12 +18,12 @@ auto main() -> int {
     cin >> n >> m >> k;
     for (int i = 1; i <= n; ++i) {
         int tmp;
-        cin >> tmp;
+        std::scanf("%d", &tmp);
         seq_s1.push(tmp);
     }
     for (int i = 1; i <= m; ++i) {
         int tmp;
-        cin >> tmp;
+        std::scanf("%d", &tmp);
         seq_s2.push(tmp); 
     }
     for (int _i = 0; _i < k; _i++) {
@@ -31,7 +31,7 @@ auto main() -> int {
         seq_s1.pop();
         auto bigger = seq_s2.top();
         seq_s2.pop();
-        if (smaller < bigger) {
+        if (smaller <= bigger) {
             seq_s1.push(bigger);
             seq_s2.push(smaller);
         } else {
