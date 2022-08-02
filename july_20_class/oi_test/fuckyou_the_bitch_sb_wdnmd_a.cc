@@ -20,5 +20,5 @@ int main() {
             dp[j] = max(dp[j], dp[j-ts[i]]+ms[i]);
         }
     }
-    cout << dp[m];
+    cout << dp[m]+1;
 }

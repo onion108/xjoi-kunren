@@ -1,0 +1,1 @@
+/Users/harrypotter/Workspace/OJWork/xjoi_kunren/aug_1_train/bailan/rust-multithreading-prac/target/debug/rust-multithreading-prac: /Users/harrypotter/Workspace/OJWork/xjoi_kunren/aug_1_train/bailan/rust-multithreading-prac/src/main.rs
