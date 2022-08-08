@@ -1,0 +1,51 @@
+#include <iostream>
+char ans[64];
+
+int main() {
+  ans[1]='C';
+  ans[2]='C';
+  ans[3]='B';
+  ans[4]='C';
+  ans[5]='A';
+  ans[6]='D';
+  ans[7]='B';
+  ans[8]='D';
+  ans[9]='B';
+  ans[10]='B';
+  ans[11]='C';
+  ans[12]='B';
+  ans[13]='B';
+  ans[14]='D';
+  ans[15]='C';
+  ans[16]='F';
+  ans[17]='F';
+  ans[18]='F';
+  ans[19]='B';
+  ans[20]='B';
+  ans[21]='F';
+  ans[22]='T';
+  ans[23]='F';
+  ans[24]='C';
+  ans[25]='C';
+  ans[26]='C';
+  ans[27]='T';
+  ans[28]='F';
+  ans[29]='F';
+  ans[30]='F';
+  ans[31]='C';
+  ans[32]='C';
+  ans[33]='B';
+  ans[34]='C';
+  ans[35]='B';
+  ans[36]='B';
+  ans[37]='D';
+  ans[38]='C';
+  ans[39]='D';
+  ans[40]='B';
+  ans[41]='D';
+  ans[42]='C';
+  ans[43]='C';
+  int n;
+  std::cin >> n;
+  std::cout << ans[n] << std::endl;
+}
