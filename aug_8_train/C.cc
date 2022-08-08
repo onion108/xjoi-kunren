@@ -28,10 +28,10 @@ class fs_item_t {
     public:
 
     // Methods that should be implemented by the subclasses.
-    virtual bool                   is_directory() const                      { throw "unimplemented"; }
-    virtual bool                   is_file() const                           { throw "unimplemented"; }
-    virtual const std::string&     name() const                              { throw "unimplemented"; }
-    virtual void                   set_name(const std::string& name)         { throw "unimplemented"; }
+    virtual bool                   is_directory() const                   { throw "unimplemented"; }
+    virtual bool                   is_file() const                        { throw "unimplemented"; }
+    virtual const std::string&     name() const                           { throw "unimplemented"; }
+    virtual void                   set_name(const std::string& name)      { throw "unimplemented"; }
 
     fs_item_t(const std::string& name) {}
     virtual ~fs_item_t() {}
