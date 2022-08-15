@@ -1,0 +1,1 @@
+{"sample_list":[{"in_file":"0.in","out_file":"0.out","timeout_ms":1000,"memory_limit":256,"points":10},{"in_file":"1.in","out_file":"1.out","timeout_ms":1000,"memory_limit":256,"points":10},{"in_file":"2.in","out_file":"2.out","timeout_ms":1000,"memory_limit":256,"points":10},{"in_file":"3.in","out_file":"3.out","timeout_ms":1000,"memory_limit":256,"points":10}]}

@@ -39,8 +39,10 @@ class fs_item_t {
 
 /// A directory.
 class fs_item_directory : public fs_item_t {
+    
     std::string pf_name;
     std::vector<std::shared_ptr<fs_item_t>> children;
+
     public:
 
     fs_item_directory(const std::string& name) : fs_item_t(name) {
