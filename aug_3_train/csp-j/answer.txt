@@ -1,1 +1,3 @@
-CCBCA DBDBB CBBDC FFFBB FTFCC CTFFF CCBCB BDCDB DCC
+version https://git-lfs.github.com/spec/v1
+oid sha256:89b8fec36213e1b0f49f29919b5f61579dad6c0a6ccbdc0b23afe4e0f803d476
+size 51

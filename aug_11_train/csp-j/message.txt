@@ -1,5 +1,3 @@
-如果n != A
-就用((n / 2A) && (n % 2))判断
-否则就用(!(n % 2A) && n % 2)判断？
- 
-Is that right?
+version https://git-lfs.github.com/spec/v1
+oid sha256:eafc1ee5eb1e0e854e29c907a1e80d027e9e49645648b7d6e80dbe48c7bf616e
+size 105
